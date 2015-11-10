@@ -1,0 +1,11 @@
+name             'afkl-onboard-bamboo-agent'
+maintainer       'JP Wesselink'
+maintainer_email 'j.wesselink@klm.com'
+license          'All rights reserved'
+description      'Installs/Configures afkl-onboard-bamboo-agent'
+long_description 'Installs/Configures afkl-onboard-bamboo-agent'
+version          '0.1.0'
+
+depends 'nodejs'
+depends 'git'
+depends 'bamboo', '= 1.5.2'

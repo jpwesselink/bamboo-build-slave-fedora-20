@@ -1,0 +1,18 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: fedora-20
+    driver:
+      memory: 2048
+      cpus: 4
+
+suites:
+  - name: default
+    run_list:
+      - recipe[afkl-onboard-bamboo-agent]
+    attributes:
