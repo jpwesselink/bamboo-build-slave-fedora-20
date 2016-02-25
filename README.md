@@ -1,6 +1,8 @@
-# kakkie-cookbook
+# bamboo-build-slave-cookbook
 
-TODO: Enter the cookbook description here.
+> This project was used for learning how to create a custom build slave
+> I am sure there are better implementations out there than what I have 
+> created here. (In other words: use at your own risk)
 
 ## Supported Platforms
 
@@ -16,23 +18,22 @@ TODO: List your supported platforms.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['afklOnboardBambooAgent']['bacon']</tt></td>
+    <td><tt>['onboardBambooAgent']['bacon']</tt></td>
     <td>Boolean</td>
-    <td>whether to include bacon</td>
     <td><tt>true</tt></td>
   </tr>
 </table>
 
 ## Usage
 
-### kakkie::default
+### bambooBuildSlave::default
 
-Include `kakkie` in your node's `run_list`:
+Include `bambooBuildSlave` in your node's `run_list`:
 
 ```json
 {
   "run_list": [
-    "recipe[kakkie::default]"
+    "recipe[bambooBuildSlave::default]"
   ]
 }
 ```
